@@ -1,0 +1,111 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.search-field {       
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  outline: none;
+}
+.search-field:hover {
+  outline: none;
+  border: none;
+}
+.search-box {
+  border: 1px solid rgb(3, 118, 211);
+  width: 281px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  border-right: none;
+}
+.search-button {
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.one-products{
+ padding:15px;
+ 
+}
+.single-product {
+  transition: 0.6s;
+   margin-bottom:40px!important;
+}
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+  border: 1px solid rgb(33, 180, 224);
+}
+.cart-height{
+  /* width: 284px; */
+    height: 55px;
+    color:rgb(0, 0, 0)
+}
+.product{
+  background-color: rgba(235, 230, 230, 0.904);
+  margin:8px;
+  padding-bottom: 30px;
+  transition: .5s;
+}
+.product:hover{
+  /* border: 3px solid rgb(151, 106, 106); */
+ box-shadow: 5px 10px 15px#888888;;
+}
+.price{
+  color:rgb(30, 87, 210)
+}
+.rating{
+  color:coral
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+.cart {
+  width: 350px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow:6px 15px 20px rgb(190, 189, 189);
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+}
+.cart-main {
+  padding-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
